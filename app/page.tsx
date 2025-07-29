@@ -12,10 +12,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-900 text-white">
-      <div className="w-full flex items-center mt-15 col-span-3 p-5">
+      <div className="w-full flex items-center mt-15 p-5">
         {" "}
         <Image
-          src={"/emblemEB.png"}
+          src={"/emblemEB1.png"}
           alt="logo"
           width={240}
           height={240}
