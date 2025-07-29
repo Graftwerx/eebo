@@ -2,6 +2,7 @@
 
 import { useChat, Message } from "@ai-sdk/react";
 import { ArrowDown, SendIcon } from "lucide-react";
+import Image from "next/image";
 import TextareaAutosize from "react-textarea-autosize";
 
 export default function Home() {
@@ -11,6 +12,16 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-900 text-white">
+      <div className="w-full flex items-center mt-15 col-span-3 p-5">
+        {" "}
+        <Image
+          src={"/emblemEB.png"}
+          alt="logo"
+          width={240}
+          height={240}
+          className="items-center flex mx-auto"
+        />
+      </div>
       {messages.length > 0 ? (
         <div className="pb-32 pt-5 space-y-5 w-[75%] mx-auto relative">
           {messages.map((message: Message) => (
@@ -28,7 +39,7 @@ export default function Home() {
           ))}
         </div>
       ) : (
-        <div className="w-full flex justify-center pt-32">
+        <div className="w-full flex justify-center pt-5">
           <h1 className="font-bold text-3xl text-center">
             Please use the input field below{" "}
             <ArrowDown className="inline-block ml-2" />
