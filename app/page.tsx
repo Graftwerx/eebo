@@ -15,7 +15,7 @@ export default function Home() {
       <div className="w-full flex items-center mt-15 p-5">
         {" "}
         <Image
-          src={"/emblemEB1.png"}
+          src={"/eebologo.png"}
           alt="logo"
           width={240}
           height={240}
